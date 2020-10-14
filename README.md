@@ -47,3 +47,27 @@ Cari username dan password ketika login FTP pada localhost!
 Cari file .pdf di wireshark lalu download dan buka file tersebut!
     ***clue: "25 50 44 46"*** 
 - Penyelesaian :
+
+
+## B. Capture Filter
+### No. 11
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+- Penyelesaian :
+
+### No. 12
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+- Penyelesaian :
+
+### No. 13
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+- Penyelesaian :
+
+### No. 14
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+- Penyelesaian :
+
+### No. 15
+Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+- Penyelesaian :
+
+
