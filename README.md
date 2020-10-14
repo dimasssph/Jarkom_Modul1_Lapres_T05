@@ -43,6 +43,16 @@ Setelah itu bisa didapatkan ```username``` dan ```password``` ketika login di si
 Temukan paket dari **web-web** yang menggunakan **basic authentication** method!
 - Penyelesaian :
 
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
+```http.authbasic``` selanjutnya akan ditemukan paket dari web-web
+![Screenshot (90)](https://user-images.githubusercontent.com/55182072/95992922-adc1c400-0e58-11eb-8001-3d7d05e7220d.png)
+
+
+
+
+
+
+
 ### No. 5
 Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
 - Penyelesaian :
