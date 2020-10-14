@@ -89,10 +89,32 @@ Cari objek apa saja yang didownload ***(RETR)*** dari koneksi FTP dengan Microso
 Cari username dan password ketika login FTP pada localhost!
 - Penyelesaian :
 
+Buka file **soal_jarkom_modul_no6,7,9.pcapng**, lalu ketik pada <i>display filter</i>
+```ip.src == 127.0.0.1 && ftp``` lalu klik kanan pilih ```follow TCP Stream```
+![Screenshot (121)](https://user-images.githubusercontent.com/55182072/96012453-50d10880-0e6e-11eb-9edc-3aa03cda77a4.png)
+
+Setelah itu, bisa diketahui bahwa ```username``` dan ``` passwordnya```
+![Screenshot (122)](https://user-images.githubusercontent.com/55182072/96012580-71995e00-0e6e-11eb-9ea3-3649779ff05c.png)
+
+Bisa disimpulkan bahwa ```username``` nya adalah dhana dan ```password``` nya adalah dhana123
+
 ### No. 10 
 Cari file .pdf di wireshark lalu download dan buka file tersebut!
     ***clue: "25 50 44 46"*** 
 - Penyelesaian :
+
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i> 
+```tcp contains 25:50:44:46``` lalu klik kanan pada paket yang ada, pilih ```Follow TCP Stream```
+![Screenshot (126)](https://user-images.githubusercontent.com/55182072/96014199-4ca5ea80-0e70-11eb-83f7-db42e4a663dd.png)
+
+Lalu, selanjutnya pada data tersebut klik simpan sebagai ```raw``` dengan ```streams``` 15
+![Screenshot (128)](https://user-images.githubusercontent.com/55182072/96014522-af978180-0e70-11eb-8dc8-8b09ac35ddf1.png)
+
+Lalu, jika data sudah disimpan sebagai ```raw``` selanjutnya kita menyimpan data tersebut dengan format file ```pdf```
+![Screenshot (130)](https://user-images.githubusercontent.com/55182072/96014878-16b53600-0e71-11eb-89ab-71cb8be564df.png)
+
+Selanjutnya, kita bisa mendapatkan file ```pdf``` yang sudah di download dengan isi :
+![Screenshot (132)](https://user-images.githubusercontent.com/55182072/96015027-482e0180-0e71-11eb-9454-67213be5d8f8.png)
 
 
 ## B. Capture Filter
