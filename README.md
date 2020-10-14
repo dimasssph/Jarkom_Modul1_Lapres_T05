@@ -10,7 +10,7 @@
 Sebutkan webserver yang digunakan pada ***"testing.mekanis.me"!***
 - Penyelesaian :
 
-Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i> 
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i> 
 
 ```http.request and http.host == "testing.mekanis.me"```, maka akan muncul <i>web server</i> yang digunakan pada ***testing.mekanis.me***
 ![Screenshot (80)](https://user-images.githubusercontent.com/55182072/95986209-d5605e80-0e4f-11eb-9a98-e5916e7cc4de.png)
@@ -32,7 +32,7 @@ Maka akan didapatkan gambar seperti dibawah ini
 ### No. 3 
 Cari username dan password ketika login di "ppid.dpr.go.id"!
 - Penyelesaian :
-Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i>
 ```http.request and http.host == "ppid.dpr.go.id"```, lalu cari yang method nya ```POST```
 ![Screenshot (87)](https://user-images.githubusercontent.com/55182072/95991674-43f4ea80-0e57-11eb-8d48-a88a5625ca76.png)
 
@@ -43,7 +43,7 @@ Setelah itu bisa didapatkan ```username``` dan ```password``` ketika login di si
 Temukan paket dari **web-web** yang menggunakan **basic authentication** method!
 - Penyelesaian :
 
-Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i>
 ```http.authbasic``` selanjutnya akan ditemukan paket dari web-web
 ![Screenshot (90)](https://user-images.githubusercontent.com/55182072/95992922-adc1c400-0e58-11eb-8001-3d7d05e7220d.png)
 
@@ -51,7 +51,7 @@ Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>di
 Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
 - Penyelesaian :
 
-Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i>
 ```http.host == "aku.pengen.pw" and http.request.method == GET and http.authbasic``` lalu cari ```GET``` nya. Setelah itu bisa didapatkan ```username``` dan ```password``` untuk masuk ke ```aku.pengen.pw```. ```username``` nya adalah "kakakgamtenk" dan ```passwordnya``` "hartatahtabermuda"
 ![Screenshot (93)](https://user-images.githubusercontent.com/55182072/95995273-77d20f00-0e5b-11eb-987d-91dcb78b9a30.png)
 
@@ -62,7 +62,7 @@ Setelah itu kita login di web ```aku.pengen.pw``` dan bisa didapatkan hasil
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file ***"Open This.pdf"*** di ***Answer.zip.*** Untuk mendapatkan password zipnya, temukan dalam file ***zipkey.txt*** (passwordnya adalah isi dari file txt tersebut).
 - Penyelesaian :
 
-Buka file **soal_jarkom_modul_no6,7,9.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
+Buka file **soal_jarkom_modul_no6,7,9.pcapng**, lalu ketik pada <i>display filter</i>
 ```ftp-data contains "Answer.zip"``` lalu di paket yang paling atas, klik kanan lalu pilih ```follow TCP Stream```
 ![Screenshot (101)](https://user-images.githubusercontent.com/55182072/95998162-c8973700-0e5e-11eb-8752-142d13828e50.png)
 
