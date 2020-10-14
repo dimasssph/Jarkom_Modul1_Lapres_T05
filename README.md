@@ -50,6 +50,7 @@ Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>di
 ### No. 5
 Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
 - Penyelesaian :
+
 Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
 ```http.host == "aku.pengen.pw" and http.request.method == GET and http.authbasic``` lalu cari ```GET``` nya. Setelah itu bisa didapatkan ```username``` dan ```password``` untuk masuk ke ```aku.pengen.pw```. ```username``` nya adalah "kakakgamtenk" dan ```passwordnya``` "hartatahtabermuda"
 ![Screenshot (93)](https://user-images.githubusercontent.com/55182072/95995273-77d20f00-0e5b-11eb-987d-91dcb78b9a30.png)
@@ -60,6 +61,20 @@ Setelah itu kita login di web ```aku.pengen.pw``` dan bisa didapatkan hasil
 ### No. 6
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file ***"Open This.pdf"*** di ***Answer.zip.*** Untuk mendapatkan password zipnya, temukan dalam file ***zipkey.txt*** (passwordnya adalah isi dari file txt tersebut).
 - Penyelesaian :
+
+Buka file **soal_jarkom_modul_no6,7,9.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
+```ftp-data contains "Answer.zip"``` lalu di paket yang paling atas, klik kanan lalu pilih ```follow TCP Stream```
+![Screenshot (101)](https://user-images.githubusercontent.com/55182072/95998162-c8973700-0e5e-11eb-8752-142d13828e50.png)
+
+Selanjutnya, streamnya dikurangi 1 menjadi 12 yang awalnya 13, lalu save as data sebagai ```raw```
+![Screenshot (102)](https://user-images.githubusercontent.com/55182072/95998428-098f4b80-0e5f-11eb-925b-62a4b160596a.png)
+
+lalu, dari data ```raw``` tersebut, di save as menjadi ```zip```
+![Screenshot (103)](https://user-images.githubusercontent.com/55182072/95998597-393e5380-0e5f-11eb-977f-791d0f748445.png)
+
+
+
+
 
 ### No. 7 
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
