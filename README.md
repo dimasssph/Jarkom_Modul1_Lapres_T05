@@ -12,7 +12,7 @@ Sebutkan webserver yang digunakan pada ***"testing.mekanis.me"!***
 
 Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i> 
 
-**http.request and http.host == "testing.mekanis.me"**, maka akan muncul <i>web server</i> yang digunakan pada ***testing.mekanis.me***
+```http.request and http.host == "testing.mekanis.me"```, maka akan muncul <i>web server</i> yang digunakan pada ***testing.mekanis.me***
 ![Screenshot (80)](https://user-images.githubusercontent.com/55182072/95986209-d5605e80-0e4f-11eb-9a98-e5916e7cc4de.png)
 
 ### No. 2 
@@ -32,6 +32,12 @@ Maka akan didapatkan gambar seperti dibawah ini
 ### No. 3 
 Cari username dan password ketika login di "ppid.dpr.go.id"!
 - Penyelesaian :
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>display filter</i>
+```http.request and http.host == "ppid.dpr.go.id"```, lalu cari yang method nya ```POST```
+![Screenshot (87)](https://user-images.githubusercontent.com/55182072/95991674-43f4ea80-0e57-11eb-8d48-a88a5625ca76.png)
+
+Setelah itu bisa didapatkan ```username``` dan ```password``` ketika login di situs PPID DPR RI, yang bernama ```username``` : "10pemuda" dan ```passwordnya``` : "guncangdunia"
+![Screenshot (88)](https://user-images.githubusercontent.com/55182072/95992059-ba91e800-0e57-11eb-974a-21a794dc5b85.png)
 
 ### No. 4
 Temukan paket dari **web-web** yang menggunakan **basic authentication** method!
