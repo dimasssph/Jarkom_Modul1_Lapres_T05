@@ -100,20 +100,49 @@ Cari file .pdf di wireshark lalu download dan buka file tersebut!
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 - Penyelesaian :
 
+Buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```port 21```
+![Screenshot (105)](https://user-images.githubusercontent.com/55182072/96004018-14e57580-0e65-11eb-8263-6c7adf4fb8f8.png)
+Disini tampak kosong, karena tidak ada yang membuka ```port 21```
+
 ### No. 12
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 - Penyelesaian :
+
+Buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```src port 80```
+![Screenshot (107)](https://user-images.githubusercontent.com/55182072/96004756-f764db80-0e65-11eb-873a-d8cdfe091bd6.png)
+
+Tampak beberapa paket yang keluar dari ```port 80``` jika kita membuka suatu website
+
 
 ### No. 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 - Penyelesaian :
 
+Buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```src port 443```
+![Screenshot (109)](https://user-images.githubusercontent.com/55182072/96005172-65110780-0e66-11eb-9606-23bfde6683dd.png)
+
 ### No. 14
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 - Penyelesaian :
+
+Langkah pertama yaitu, membuka ```command prompt``` untuk mendapatkan IP kita, dengan mengketikkan ```ipconfig```
+![Screenshot (111)](https://user-images.githubusercontent.com/55182072/96005485-ae615700-0e66-11eb-9a87-85ea92f78f2f.png)
+
+Lalu ```copy``` IP yang tampil pada ```IPv4 Address```, selanjutnya buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```src [IP yang sudah didapatkan tadi]``` Misal : ```src  192.168.0.147```
+![Screenshot (113)](https://user-images.githubusercontent.com/55182072/96006001-3a737e80-0e67-11eb-92a9-3f824078e119.png)
+
+Berguna untuk meng ```capture``` paket data yang tujuannya ke IP kita
 
 ### No. 15
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
 - Penyelesaian :
 
+Langkah pertama yaitu, membuka ```command prompt``` untuk mendapatkan IP ***monta.if.its.ac.id*** kita harus mengketikkan ```ping monta.if.its.ac.id```
+![Screenshot (115)](https://user-images.githubusercontent.com/55182072/96006449-b4a40300-0e67-11eb-9ca1-67652fb1c386.png)
 
+IP ```monta.if.its.ac.id``` adalah ```103.94.190.11```
+
+Jika sudah didapat alamat IP nya, selanjutnya buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```host 103.94.190.11 ```
+![Screenshot (117)](https://user-images.githubusercontent.com/55182072/96006953-37c55900-0e68-11eb-85ab-1b79ba0ecaa1.png)
+
+Berguna untuk meng ```capture``` paket data yang tujuannya ke ```monta.if.its.ac.id```
