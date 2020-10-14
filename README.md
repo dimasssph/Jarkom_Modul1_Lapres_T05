@@ -19,7 +19,7 @@ Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya masukkan <i>di
 Simpan gambar **"Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"**!
 - Penyelesaian :
 
-Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya pilih <i>file<i>, dan selanjutnya pilih <i>Export Object</i> kedalam <i>HTTP</i>
+Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu selanjutnya pilih <i>file</i>, dan selanjutnya pilih <i>Export Object</i> kedalam <i>HTTP</i>
 ![Screenshot (83)](https://user-images.githubusercontent.com/55182072/95986520-56b7f100-0e50-11eb-863a-650f5257b50c.png)
 
 Lalu selanjutnya, cari **HTTP Object*** yang mempunyai <i>file name</i> **"Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"** lalu save
