@@ -12,7 +12,7 @@ Sebutkan webserver yang digunakan pada ***"testing.mekanis.me"!***
 
 Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i> 
 
-```http.request and http.host == "testing.mekanis.me"```, maka akan muncul <i>web server</i> yang digunakan pada ***testing.mekanis.me***
+```http.host == "testing.mekanis.me"```, maka akan muncul <i>web server</i> yang digunakan pada ***testing.mekanis.me***
 ![Screenshot (80)](https://user-images.githubusercontent.com/55182072/95986209-d5605e80-0e4f-11eb-9a98-e5916e7cc4de.png)
 
 ### No. 2 
