@@ -55,7 +55,10 @@ Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filt
 ```http.host == "aku.pengen.pw" and http.request.method == GET and http.authbasic``` lalu cari ```GET``` nya. Setelah itu bisa didapatkan ```username``` dan ```password``` untuk masuk ke ```aku.pengen.pw```. ```username``` nya adalah "kakakgamtenk" dan ```passwordnya``` "hartatahtabermuda"
 ![Screenshot (93)](https://user-images.githubusercontent.com/55182072/95995273-77d20f00-0e5b-11eb-987d-91dcb78b9a30.png)
 
-Setelah itu kita login di web ```aku.pengen.pw``` dan bisa didapatkan hasil
+Setelah itu kita login di web ```aku.pengen.pw``` dan bisa didapatkan hasil lalu masukkan nilai T568B adalah 
+```
+putih hijau - hijau - putih kuning - biru - putih biru - kuning - putih merah - merah
+```
 ![Screenshot (91)](https://user-images.githubusercontent.com/55182072/95995466-b5cf3300-0e5b-11eb-82e7-2121a5265545.png)
 
 ### No. 6
@@ -72,25 +75,29 @@ Selanjutnya, streamnya dikurangi 1 menjadi 12 yang awalnya 13, lalu save as data
 lalu, dari data ```raw``` tersebut, di save as menjadi ```zip```
 ![Screenshot (103)](https://user-images.githubusercontent.com/55182072/95998597-393e5380-0e5f-11eb-977f-791d0f748445.png)
 
-
-
-
+lalu untuk mendapatkan data passwordnya, gunakan ```ftp-data contains "zipkey.txt"``` lalu dengan cara yang sama seperti yang diatas, di dapatkan nilai password = hey997400323051
 
 ### No. 7 
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
 Your Super Mega Ultra Rare Hint = nama pdf-nya ***"Yes.pdf"***
 - Penyelesaian :
+menggunakan filter ```ftp-data contains "Yes.pdf"``` lalu follow stream, lalu lakukan hal yang sama seperti nomor sebelumnya untuk mendapatkan data PDF nya
+![Screenshot (1010)](https://i.ibb.co/g9zf9R5/image.png)
+
 
 ### No. 8 
 Cari objek apa saja yang didownload ***(RETR)*** dari koneksi FTP dengan Microsoft FTP Service!
 - Penyelesaian :
+gunakan filter ```ftp contains Microsoft``` lalu ambil IP dari microsoft ftp service lalu gunakan filter ```ftp.request.command == RETR and ip.host == 198.246.117.106```
+lalu didapatkan data yang dibutuhkan
+![Screenshot (1011)](https://i.ibb.co/0qL6CxB/image.png)
 
 ### No. 9
 Cari username dan password ketika login FTP pada localhost!
 - Penyelesaian :
 
 Buka file **soal_jarkom_modul_no6,7,9.pcapng**, lalu ketik pada <i>display filter</i>
-```ip.src == 127.0.0.1 && ftp``` lalu klik kanan pilih ```follow TCP Stream```
+```ip.src == 127.0.0.1 && ftp contains PASS || ftp contains USER``` lalu klik kanan pilih ```follow TCP Stream```
 ![Screenshot (121)](https://user-images.githubusercontent.com/55182072/96012453-50d10880-0e6e-11eb-9edc-3aa03cda77a4.png)
 
 Setelah itu, bisa diketahui bahwa ```username``` dan ``` passwordnya```
@@ -140,8 +147,8 @@ Tampak beberapa paket yang keluar dari ```port 80``` jika kita membuka suatu web
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 - Penyelesaian :
 
-Buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```src port 443```
-![Screenshot (109)](https://user-images.githubusercontent.com/55182072/96005172-65110780-0e66-11eb-9606-23bfde6683dd.png)
+Buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```dst port 443```
+![Screenshot (109)](https://i.ibb.co/MVRD3gG/image.png)
 
 ### No. 14
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
@@ -159,12 +166,7 @@ Berguna untuk meng ```capture``` paket data yang tujuannya ke IP kita
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
 - Penyelesaian :
 
-Langkah pertama yaitu, membuka ```command prompt``` untuk mendapatkan IP ***monta.if.its.ac.id*** kita harus mengketikkan ```ping monta.if.its.ac.id```
-![Screenshot (115)](https://user-images.githubusercontent.com/55182072/96006449-b4a40300-0e67-11eb-9ca1-67652fb1c386.png)
-
-IP ```monta.if.its.ac.id``` adalah ```103.94.190.11```
-
-Jika sudah didapat alamat IP nya, selanjutnya buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```host 103.94.190.11 ```
-![Screenshot (117)](https://user-images.githubusercontent.com/55182072/96006953-37c55900-0e68-11eb-85ab-1b79ba0ecaa1.png)
+Jika sudah didapat alamat IP nya, selanjutnya buka program ***Wireshark*** lalu klik ```Capture Filter``` dan ketikkan ```host monta.if.its.ac.id ```
+![Screenshot (117)](https://i.ibb.co/jf7F1C4/image.png)
 
 Berguna untuk meng ```capture``` paket data yang tujuannya ke ```monta.if.its.ac.id```
