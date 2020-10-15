@@ -32,6 +32,7 @@ Maka akan didapatkan gambar seperti dibawah ini
 ### No. 3 
 Cari username dan password ketika login di "ppid.dpr.go.id"!
 - Penyelesaian :
+
 Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i>
 ```http.request and http.host == "ppid.dpr.go.id"```, lalu cari yang method nya ```POST```
 ![Screenshot (87)](https://user-images.githubusercontent.com/55182072/95991674-43f4ea80-0e57-11eb-8d48-a88a5625ca76.png)
@@ -81,6 +82,7 @@ lalu untuk mendapatkan data passwordnya, gunakan ```ftp-data contains "zipkey.tx
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
 Your Super Mega Ultra Rare Hint = nama pdf-nya ***"Yes.pdf"***
 - Penyelesaian :
+
 menggunakan filter ```ftp-data contains "Yes.pdf"``` lalu follow stream, lalu lakukan hal yang sama seperti nomor sebelumnya untuk mendapatkan data PDF nya
 ![Screenshot (1010)](https://i.ibb.co/g9zf9R5/image.png)
 
@@ -88,6 +90,7 @@ menggunakan filter ```ftp-data contains "Yes.pdf"``` lalu follow stream, lalu la
 ### No. 8 
 Cari objek apa saja yang didownload ***(RETR)*** dari koneksi FTP dengan Microsoft FTP Service!
 - Penyelesaian :
+
 gunakan filter ```ftp contains Microsoft``` lalu ambil IP dari microsoft ftp service lalu gunakan filter ```ftp.request.command == RETR and ip.host == 198.246.117.106```
 lalu didapatkan data yang dibutuhkan
 ![Screenshot (1011)](https://i.ibb.co/0qL6CxB/image.png)
