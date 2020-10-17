@@ -12,8 +12,15 @@ Sebutkan webserver yang digunakan pada ***"testing.mekanis.me"!***
 
 Buka file **soal_jarkom_modul_no1-5,10.pcapng**, lalu ketik pada <i>display filter</i> 
 
-```http.host == "testing.mekanis.me"```, maka akan muncul <i>web server</i> yang digunakan pada ***testing.mekanis.me*** lalu klik kanan, lalu klik follow -> Http Stream, lalu akan terlihat bahwa webserver yang digunakan adalah **Server: nginx/1.14.0 (Ubuntu)**
+```http.host == "testing.mekanis.me"```, maka akan muncul <i>web server</i> yang digunakan pada ***testing.mekanis.me*** 
 ![Screenshot (80)](https://user-images.githubusercontent.com/55182072/95986209-d5605e80-0e4f-11eb-9a98-e5916e7cc4de.png)
+
+lalu klik kanan, lalu klik follow -> Http Stream
+![Screenshot (134)](https://user-images.githubusercontent.com/55182072/96334509-91fa3000-109b-11eb-8a7e-2b43274ac891.png)
+
+lalu terlihat, bahwa server yang digunakan adalah ***nginx/1.14.0 (Ubuntu)***
+![Screenshot (135)](https://user-images.githubusercontent.com/55182072/96334540-c40b9200-109b-11eb-9651-cdc9c711740b.png)
+
 
 ### No. 2 
 Simpan gambar **"Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"**!
