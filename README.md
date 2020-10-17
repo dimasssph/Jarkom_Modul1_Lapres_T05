@@ -98,6 +98,8 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya ***"Yes.pdf"***
 menggunakan filter ```ftp-data contains "Yes.pdf"``` lalu follow stream, lalu lakukan hal yang sama seperti nomor sebelumnya untuk mendapatkan data PDF nya
 ![Screenshot (1010)](https://i.ibb.co/g9zf9R5/image.png)
 
+lalu didapatkan hasil seperti ini
+![Screenshot (141)](https://user-images.githubusercontent.com/55182072/96334849-f74f2080-109d-11eb-93b9-492b4e9295b7.png)
 
 ### No. 8 
 Cari objek apa saja yang didownload ***(RETR)*** dari koneksi FTP dengan Microsoft FTP Service!
