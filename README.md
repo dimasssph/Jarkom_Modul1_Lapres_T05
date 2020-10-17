@@ -84,6 +84,11 @@ lalu, dari data ```raw``` tersebut, di save as menjadi ```zip```
 ![Screenshot (103)](https://user-images.githubusercontent.com/55182072/95998597-393e5380-0e5f-11eb-977f-791d0f748445.png)
 
 lalu untuk mendapatkan data passwordnya, gunakan ```ftp-data contains "zipkey.txt"``` lalu dengan cara yang sama seperti yang diatas, di dapatkan nilai password = hey997400323051
+![Screenshot (137)](https://user-images.githubusercontent.com/55182072/96334715-0bdee900-109d-11eb-8d48-dc8124e4a5d7.png)
+
+Maka, file zip dapat dibuka, dan didapatkan hasil
+![Screenshot (139)](https://user-images.githubusercontent.com/55182072/96334727-1bf6c880-109d-11eb-9c25-e378b26b893e.png)
+
 
 ### No. 7 
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
